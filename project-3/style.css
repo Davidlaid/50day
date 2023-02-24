@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-image: linear-gradient(to right, rgb(60, 122, 74) , rgb(223, 147, 147));
+}
+
+.search {
+    position: relative;
+    height: 50px;
+    
+
+}
+.search .input {
+    height: 50px;
+    width: 50px;
+    padding: 0 5px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: 0.4s linear;
+}
+.search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: white;
+}
+.search .input.active {
+    width: 200px;
+}
+
+.search .input, .search button:focus {
+    outline: none;
+}
